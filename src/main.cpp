@@ -13,7 +13,7 @@ void addcal(int x, int y) {
 
 int main() {
     myThreadPool pool(4);
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < 1100; ++i) {
         auto f = std::bind(addcal, i, i*2);
         pool.addTask(f);
     }
